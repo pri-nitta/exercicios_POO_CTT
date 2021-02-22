@@ -7,23 +7,11 @@ class Person(
     private var bday: Int,
     private var height: Double
 ) {
-    fun nome(): String {
-        return name
+    fun age(): Int {
+        return 2021 - bdayYear
     }
 
-    fun ano(): Int {
-        return bdayYear
-    }
-
-    fun mes(): Int {
-        return bdayMonth
-    }
-
-    fun dia(): Int {
-        return bday
-    }
-
-    fun altura(): Double {
-        return height
+    fun frase(): String {
+        return "${name} nasceu em ${bday}/${bdayMonth}/${bdayYear}, tem ${age()} anos e possui ${height} de altura."
     }
 }

@@ -1,20 +1,21 @@
 package Exercicio01
 
 fun main() {
+
+    //testando se a classe funcionou!
     var p1 = Person(
-        nome = "Priscila",
-        dia = 13,
-        mes = 9,
-        ano = 1990,
-        altura = 1.65
-    )
-    fun age(): Int {
-        return 2021 - p1.bdayYear
-    }
+        name="Amanda",
+        bdayYear=1989,
+        bdayMonth=8,
+        bday = 16,
+        height = 1.70)
+    println(p1.frase())
 
-    fun frase(): String {
-        return "${p1.name} nasceu em ${p1.bday}/${p1.bdayMonth}/${p1.bdayYear}, tem ${age()} anos e possui ${p1.height} de altura."
-    }
-println (frase())
-
+    var p2 = Person(
+        name = "Isabel",
+        bdayYear = 1987,
+        bdayMonth = 3,
+        bday = 10,
+        height = 1.64)
+    println(p2.frase())
 }
