@@ -1,10 +1,8 @@
-//package Exercicio03
-//
-//class programador(
-//    id: Int,
-//    nome: String,
-//    cpf: String,
-//    salario: Double,
-//    val prog: Boolean
-//)
-//}
+package Exercicio03
+
+class programador() {
+    fun salarioAjustado(x: Double): Double {
+        val a: Double = x + x * 0.2
+        return a
+    }
+}

@@ -1,9 +1,8 @@
-//package Exercicio03
-//
-//class gestor(
-//    id: Int,
-//    nome: String,
-//    cpf: String,
-//    salario: Double,
-//val gest: Boolean){
-//}
+package Exercicio03
+
+class gestor(){
+fun salarioAjustado(x: Double): Double {
+    val a: Double = x + x * 0.1
+    return a
+}
+}
